@@ -1,0 +1,6 @@
+<%= render "form" %>
+<h1> School Class Form </h1>
+
+<%= form_tag("/school_classes/#{@school_class.id}", method: "delete") do %>
+<%= submit_tag("Delete Class")%>
+<%end%>
